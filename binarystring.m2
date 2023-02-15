@@ -8,13 +8,13 @@ for i in f(n-1) do (
     );
 return l
 )
-
 gvar = n -> (
     var = [];
     ideall = [];
     for i in f(n) do (
 	var = append(var,p_(i#0));
-	ideall = append(ideall, p_(i#0)-W*(i#1)*V);
+	R = R[p_(i#0)];
+	ideall = append(ideall, p_(i#0)-(W*(i#1)*V)_(0,0));
 	);
-    return var,ideall
+    return [var,ideall]
     )
