@@ -1,4 +1,5 @@
-N=6
+N = 4
+
 R = QQ[a,b,q]
 d = mutableMatrix(R,N,N)
 e = mutableMatrix(R,N,N)
