@@ -1,0 +1,20 @@
+
+ss := solve({A*(b)=a*II, B*(t)=b*A+q*C+a*J, C*(t+q+b)=t*B+q*E+a*K, DD*(t)=q*F+a*L+b*C,E*(t+q+b)=q*II+t*C+a*M, F*(t+q+t)=q*J+t*DD+a*N+b*E+q*G, G*(t+q+b)=q*K+t*F+a*P, H*(t)=q*L+a*Q+b*G,II*(a+q+b)=t*E, J*(a+q+t)=t*F+q*K+b*II, K*(a+q+t+q+b)=t*G+q*M+t*J, L*(a+q+t) = t*H+q*N+b*K, M*(a+q+b)=t*K, N*(a+q+t)=t*L+q*P+b*M, P*(a+q+b)=t*N, Q*(a)=b*P}, {B,C,DD,E,F,G,H,II,J,K,L,M,N,P,Q});
+li := [A,B,C,DD,E,F,G,H,II,J,K,L,M,N,P,Q]:
+
+li := subs(A = a^4*t^4,subs(ss,li)):
+lprint(indets(li));
+pi := []:
+for i1 from 1 to 0 by -1 do
+for i2 from 1 to 0 by -1 do
+for i3 from 1 to 0 by -1 do
+for i4 from 1 to 0 by -1 do
+pi := [pi[],cat(p,i1,i2,i3,i4)]:
+od:od:od:od:
+lprint(pi);
+
+
+for i from 1 to 16 do
+lprint(sort(expand(li[i]))-pi[i],`,`);
+od:
+
