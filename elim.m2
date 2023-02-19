@@ -1,4 +1,4 @@
-load "binarystring.m2"
+load "binarystring2.m2"
 load "asep.m2"
 
 n=3

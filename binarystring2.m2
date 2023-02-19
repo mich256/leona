@@ -1,0 +1,17 @@
+f = n -> (
+    l_n = {};
+    if n == 1 then l_n = {"0","1"}
+    else
+    for i in f(n-1) do (
+	l_n = l_n|{i|"0",i|"1"};
+	);
+    return l_n
+    )
+
+gvar = n -> (
+    var = [];
+    for i in f(n) do (
+	var = append(var,p_i);
+	);
+    return var
+    )
