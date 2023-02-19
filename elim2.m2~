@@ -1,0 +1,7 @@
+n = 3
+N = 4
+R = QQ([a,b,q]|gvar(n))
+
+load "asep.m2"
+load "binarystring.m2"
+

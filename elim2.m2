@@ -13,9 +13,11 @@ rela = n -> (
     return pols
     )
 I = ideal(rela(n));
+I = ideal(selectInSubring(1,gens gb(I,DegreeLimit=>15)));
+I = ideal(selectInSubring(1,gens gb(I,DegreeLimit=>10)));
 I = ideal(selectInSubring(1,gens gb(I)));
 betti mingens I
-toString mingens I
+--toString mingens I
 dim I
 degree I
 --T = QQ(gvar(n))
