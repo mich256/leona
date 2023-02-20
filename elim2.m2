@@ -1,4 +1,4 @@
-load "asep.m2"
+load "asep2.m2"
 rela = n -> (
     pols = {};
     for i in f(n) do (

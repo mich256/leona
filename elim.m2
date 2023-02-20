@@ -1,11 +1,12 @@
-load "binarystring2.m2"
+load "binarystring.m2"
 load "asep.m2"
 
 n=3
 
 lov = (gvar(n))#0
-S = QQ[a,b,q,lov,MonomialOrder=>Eliminate 3]
-F = map(S,R)
 I = ideal((gvar(3))#1)
-I = ideal( selectInSubring(1,gens gb(I)));
+(flattenedR, flatteningMap) = flattenRing R
+S = newRing(flattenedR, MonomialOrder=>Eliminate(3))
+SI = sub(I,S)
+eliminate(SI,{a,b,q})
 dim I, degree I
