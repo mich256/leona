@@ -8,5 +8,4 @@ I = ideal((gvar(3))#1)
 (flattenedR, flatteningMap) = flattenRing R
 S = newRing(flattenedR, MonomialOrder=>Eliminate(3))
 SI = sub(I,S)
-eliminate(SI,{a,b,q})
-dim I, degree I
+J = eliminate(SI,{a,b,q})
