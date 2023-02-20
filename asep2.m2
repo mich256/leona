@@ -1,14 +1,8 @@
 load "binarystring2.m2"
 
-n = 3
+n = 2
 N = 4
-R = QQ([a,b,q]|gvar(n)|[MonomialOrder => Eliminate 3,
-	Degrees => {
-	    1,1,1,
-	    5,5,
-	    5,5,
-	    5,5,
-	    5,5}]);
+R = QQ([a,b,q]|gvar(n)|[MonomialOrder => Eliminate 3]);
 
 d = mutableMatrix(R,N,N)
 e = mutableMatrix(R,N,N)

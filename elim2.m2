@@ -1,4 +1,5 @@
 load "asep2.m2"
+
 rela = n -> (
     pols = {};
     for i in f(n) do (
@@ -13,8 +14,6 @@ rela = n -> (
     return pols
     )
 I = ideal(rela(n));
-I = ideal(selectInSubring(1,gens gb(I,DegreeLimit=>15)));
-I = ideal(selectInSubring(1,gens gb(I,DegreeLimit=>10)));
 I = ideal(selectInSubring(1,gens gb(I)));
 betti mingens I
 --toString mingens I
