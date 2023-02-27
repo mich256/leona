@@ -16,7 +16,7 @@ rela = n -> (
 I = ideal(rela(n));
 I = ideal(selectInSubring(1,gens gb(I)));
 betti mingens I
---toString mingens I
+--toString mingens
 dim I
 degree I
 --T = QQ(gvar(n))

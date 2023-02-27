@@ -1,7 +1,7 @@
 load "binarystring2.m2"
 
-n = 2
-N = 4
+n = 3
+N = 6
 R = QQ([a,b,q]|gvar(n)|[MonomialOrder => Eliminate 3]);
 
 d = mutableMatrix(R,N,N)

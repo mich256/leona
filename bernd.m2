@@ -35,10 +35,10 @@ a^2*b^3*t^3+a*b^4*t^3+a*b^3*q*t^3-p0010,
 a*b^3*t^4-p0001, 
 b^4*t^4-p0000);
 
-I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>24)));
-betti mingens I
-I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>32)));
-betti mingens I
+--I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>24)));
+--betti mingens I
+--I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>32)));
+--betti mingens I
 I = ideal( selectInSubring(1,gens gb(I)));
 betti mingens I
 toString mingens I
