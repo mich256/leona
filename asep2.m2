@@ -1,8 +1,15 @@
 load "binarystring2.m2"
 
 n = 3
-N = 6
+N = 4
 R = QQ([a,b,q]|gvar(n)|[MonomialOrder => Eliminate 3]);
+--Degrees => {
+--1,1,1,
+--5,5,5,5,
+--5,5,5,5}
+--degree is n + n^2/4 (or (n^2-1)/4) which is n + 
+--maximal number of empty boxes which is 
+--max number of 10-inversions
 
 d = mutableMatrix(R,N,N)
 e = mutableMatrix(R,N,N)

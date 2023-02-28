@@ -35,15 +35,15 @@ a^2*b^3*t^3+a*b^4*t^3+a*b^3*q*t^3-p0010,
 a*b^3*t^4-p0001, 
 b^4*t^4-p0000);
 
---I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>24)));
+I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>24)));
 --betti mingens I
---I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>32)));
+I = ideal( selectInSubring(1,gens gb(I,DegreeLimit=>32)));
 --betti mingens I
 I = ideal( selectInSubring(1,gens gb(I)));
 betti mingens I
 toString mingens I
 dim I
-T = QQ[p1111, p1110, p1101, p1100, p1011, p1010, p1001, p1000, p0111, p0110, p0101, p0100, p0011, p0010, p0001, p0000];
-f = map(T,R,{0,0,0,0,p1111, p1110, p1101, p1100, p1011, p1010, p1001, p1000, p0111, p0110, p0101, p0100, p0011, p0010, p0001, p0000});
-I = f(I);
-dim I, degree I
+--T = QQ[p1111, p1110, p1101, p1100, p1011, p1010, p1001, p1000, p0111, p0110, p0101, p0100, p0011, p0010, p0001, p0000];
+--f = map(T,R,{0,0,0,0,p1111, p1110, p1101, p1100, p1011, p1010, p1001, p1000, p0111, p0110, p0101, p0100, p0011, p0010, p0001, p0000});
+--I = f(I);
+--dim I, degree I

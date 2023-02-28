@@ -15,10 +15,11 @@ rela = n -> (
     )
 I = ideal(rela(n));
 I = ideal(selectInSubring(1,gens gb(I)));
-betti mingens I
+--I = ideal(selectInSubring(1,gens gb(I,DegreeLimit=>9)));
+--betti mingens 
 --toString mingens
-dim I
-degree I
+--dim I
+--degree I
 --T = QQ(gvar(n))
 --f = map(T,R,{0,0,0}|toList(gvar(n)))
 --I = f(I)
